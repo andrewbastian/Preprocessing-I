@@ -134,3 +134,25 @@ html,
 body {
   height: 100%;
 }
+.navBar {
+  display: flex;
+  justify-content: flex-end;
+}
+nav {
+  display: flex;
+  width: 30%;
+  justify-content: space-around;
+}
+h1,
+.catchy {
+  display: flex;
+  justify-content: center;
+}
+h1 {
+  font-size: 3rem;
+}
+div {
+  background-color: green;
+  color: #1A237E;
+  padding: 15px;
+}

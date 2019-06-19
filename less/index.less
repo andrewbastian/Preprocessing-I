@@ -56,13 +56,32 @@ table {
 html, body {
     height: 100%;
 }
-.catchy{
-	font-size: 2rem;
-	color: @font-color;
-	background-color: @backgroundgray;
+.navBar{
+	display: flex;
+	justify-content: flex-end;
 }
-p{
-	font-size: 2rem;
-	color: @font-color;
-	background-color: @backgroundgray
+nav{
+	display: flex;
+	width: 30%;
+	justify-content: space-around;
+}
+h1, .catchy{
+	display: flex;
+	justify-content: center;
+
+}
+h1 {
+
+	font-size: 3rem;
+
+}
+
+
+@background-color: green;
+@text-color: #1A237E;
+
+div{
+  background-color: @background-color;
+  color: @text-color;
+  padding: 15px;
 }
