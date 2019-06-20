@@ -137,21 +137,32 @@ body {
 .navBar {
   display: flex;
   justify-content: flex-end;
+
+  @media (max-width: 515px ){
+    flex-direction: column;
+  }
 }
 nav {
   display: flex;
-  width: 30%;
+  width: 40%;
   justify-content: space-around;
+
 }
+
+img{
+  width: 50%;
+}
+
 h1,
 .catchy {
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 }
 h1 {
   font-size: 3rem;
-  padding-bottom: 3%;
+  /* font-family: 'Windsor', arial; */
 }
+
 .namePlate {
   display: flex;
   justify-content: center;
@@ -159,6 +170,7 @@ h1 {
   margin: auto 0;
   padding-top: 5%;
   padding-bottom: 5%;
+  background-color: gray;
 }
 .about,
 button {
@@ -190,6 +202,9 @@ h2 {
   border-left: 2rem solid black;
   border-bottom: 0.02rem dotted black;
 }
+article {
+  font-size: 1.5rem;
+}
 div {
   color: black;
   padding: 15px;
@@ -201,4 +216,17 @@ table,
 th,
 td {
   border: 1px solid black;
+}
+.trGray {
+  background-color: gray;
+}
+
+@media (max-width: 515px){
+
+h1{
+  color;blue:
+}
+nav{
+  text-decoration: none;
+}
 }
