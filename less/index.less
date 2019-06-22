@@ -1,5 +1,5 @@
 // Is this working?
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
@@ -13,8 +13,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -57,3 +57,99 @@ html, body {
     height: 100%;
 }
 
+// nav-mixin
+.nav-mixin(@tDecor, @cursor, @tColor){
+	text-decoration: @tDecor;
+	cursor: @cursor;
+	
+}
+.navBar{
+	display: flex;
+	justify-content: flex-end;
+}
+nav{
+	display: flex;
+	width: 40%;
+	justify-content: space-around;
+
+}
+h1, .catchy{
+display: flex;
+justify-content: center;
+}
+
+h1 {
+	font-size: 3rem;
+	padding-bottom: 3%;
+}
+.background-gray(@background-color: gray){
+	background-color: @background-color;
+}
+.namePlate{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	margin: auto 0;
+	padding-top: 5%;
+	padding-bottom: 5%;
+	.background-gray();
+}
+.about, button{
+	display: flex;
+	flex-direction: column;
+	// text-align: center;
+	width: 45%;
+	font-size: 2rem;
+}
+button{
+	width: 30%;
+	padding:inherit;
+	font-size: 1rem;
+
+}
+@text-color: black;
+@font-size: 3rem;
+
+.middle{
+	display: flex;
+	justify-content: space-around;
+}
+.offerBox{
+	width: 40%;
+
+}
+
+h2{
+	font-size: @font-size;
+
+}
+
+.languagesBox h3 {
+	border: .02rem solid black;
+	font-size: @font-size;
+}
+
+.languagesBox article{
+	border-left: 2rem solid black;
+	border-bottom: .02rem dotted black;
+}
+article{
+	font-size: 1.5rem;
+}
+div{
+  // background-color: @background-color;
+  color: @text-color;
+  padding: 15px;
+}
+h3{
+	font-size: 2rem;
+
+}
+table, th, td {
+  border: 1px solid black;
+
+}
+.trGray{
+	.background-gray();
+
+}
